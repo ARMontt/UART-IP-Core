@@ -28,7 +28,7 @@ package APB_SLAVE is
 		signal apb_o			:		in	APB_SLAVE_OUT_Type;
 		signal apb_address	:		in	std_logic_vector(ADDRESS-1 downto 0);
 		signal apb_data		:		inout std_logic_vector(DATA_WIDTH-1 downto 0);
-		signal apb_pwrite_i	:		in std_logic;
+		signal apb_pwrite_i	:		in std_logic
 	);
 end package;
 
@@ -40,7 +40,7 @@ package body APB_SLAVE is
 		signal apb_o			:		in	APB_SLAVE_OUT_Type;
 		signal apb_address	:		in	std_logic_vector(ADDRESS-1 downto 0);
 		signal apb_data		:		inout std_logic_vector(DATA_WIDTH-1 downto 0);
-		signal apb_pwrite_i	:		in std_logic;
+		signal apb_pwrite_i	:		in std_logic
 	) is
 
 	begin
